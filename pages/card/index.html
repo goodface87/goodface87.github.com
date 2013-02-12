@@ -1,2 +1,100 @@
 
-Hola tu.
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>About - My ASP.NET MVC Application</title>
+        <link href="/favicon.ico" rel="shortcut icon" type="image/x-icon">
+        <meta name="viewport" content="width=device-width">
+        <link href="/assets/site.css" rel="stylesheet">
+
+        <link href="/assets/themes/bootstrap/css/bootstrap.css" rel="stylesheet">
+
+        <link href="/assets/themes/bootstrap/css/bootstrap-responsive.css" rel="stylesheet">
+
+        <link href="/assets/fit.css" rel="stylesheet">
+
+        <script src="/assets/Scripts/modernizr-2.5.3.js"></script>
+
+    <link href="chrome://sbi/skin/sbi.css" rel="stylesheet" type="text/css" id="sbi-style">
+    </head>
+    <body>
+        <header>
+        </header>
+        
+
+
+
+        <div id="track-empty-state" class="container">
+            <div class="major-header gray">This is a thing, ya'll</div>
+
+            <div class="dramatic-body dark-gray">These are some flippy things</div>
+    
+    
+            <div class="form-inline row">
+                <span class="control-group span6">
+                    <input type="text" id="question"  class="span6" placeholder="Question">
+                </span>
+                <span class="control-group span5">
+                    <input type="text" id="answer" class="span5" placeholder="Answer">
+                </span>
+                    <button id="add-card" class="btn btn-small"><i class="icon-plus"></i></button>
+            </div>
+            <div class="accordion" id="question-accordion">
+                <div class="accordion-group">
+                    <div class="accordion-heading">
+                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+                            List of Flash Cards
+                        </a>
+                    </div>
+                    <div id="collapseOne" class="accordion-body collapse in">
+                        <ul id="flash-cards-list" class="accordion-inner">
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+    
+            <div class="card-container" style="display:none;">
+                <div class="card track-card everyday_activities flippy">
+                    <div class="card-front widget">
+                        <div class="widget-subsection">
+                            <span class="front-face dramatic-body">front face</span>
+                            <div class="flip-message pull-right muted" >Click card to flip over</div>
+                        </div>
+                    </div>
+
+                    <div class="card-back card-rotate widget">
+                        <div class="widget-subsection ">
+                            <span class="back-face dramatic-body">back face</span>
+                            <div class="flip-message pull-right muted" >Click card to flip over</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div id="myCarousel" class="carousel slide">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+            </div>
+
+        </div>
+        
+        <script src="/assets/Scripts/jquery-1.7.1.js"></script>
+		<script src="/assets/bootstrap/js/bootstrap.min.js"></script>
+		<script src="/assets/Scripts/underscore.js"></script>
+		<script src="/assets/Scripts/backbone.js"></script>
+		<script src="/assets/Scripts/fit.js"></script>
+    </body>
+</html>
